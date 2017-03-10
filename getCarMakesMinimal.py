@@ -17,7 +17,7 @@ def getReviews(makes_minimal):
 		res = requests.get(url)
 		jsonRes = res.json()
 		# print jsonRes
-		with open("makes.json","a") as jsonfile:		
+		with open("minimal_makes.json","a") as jsonfile:		
 			json.dump(jsonRes,jsonfile)
 			jsonfile.write("\n")
 
